@@ -40,7 +40,6 @@ class App extends Component {
            if (nameA > nameB) {
              return 1;
            }
-           // a must be equal to b
            return 0;
         })
       console.log(sortedHogs);
@@ -49,8 +48,8 @@ class App extends Component {
       })
     } else {
       const sortedHogs = this.state.allHogs.sort((a,b)=>{
-                          return a[longAF] - b[longAF]
-                        })
+          return a[longAF] - b[longAF]
+        })
       console.log(sortedHogs);
       this.setState({
         allHogs: sortedHogs
